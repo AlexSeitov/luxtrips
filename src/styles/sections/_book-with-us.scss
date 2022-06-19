@@ -1,0 +1,67 @@
+.book-with-us {
+
+  // .book-with-us__title
+
+  &__title {
+    text-align: center;
+  }
+
+  // .book-with-us__row
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(14);
+
+    @media (min-width: $sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $lg) {
+      gap: rem(30);
+    }
+  }
+
+  &__item:hover {
+    & > img {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.book-card-img {
+  position: relative;
+  padding-top: 40%;
+  overflow: hidden;
+  border-radius: $radius;
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.7s;
+    inset: 0;
+  }
+
+  // .book-card-img__title
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    color: $white;
+    font-size: rem(30);
+    font-family: $secondaryFontFamily;
+    line-height: lh(30, 30);
+    text-align: center;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: $md) {
+      font-size: rem(44);
+    }
+  }
+}

@@ -1,0 +1,246 @@
+.why {
+  // padding-bottom: 40px;
+  &__container {
+    position: relative;
+
+    // padding-inline: rem(15);
+  }
+
+  &__heading,
+  &__middle {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: rem(540);
+    margin-inline: auto;
+    padding-inline: rem(15);
+
+    @media (min-width: $md) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: rem(60);
+    }
+  }
+
+  // .why__heading
+
+  &__heading {
+    margin-bottom: rem(20);
+  }
+
+  // .why__heading-title
+
+  &__heading-title {
+  }
+
+  // .why__heading-text
+
+  &__heading-text {
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    transform: translateY(rem(-80));
+
+    &::after {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 30%);
+      transform: translateX(-50%) rotate(45deg);
+      backdrop-filter: blur(2px);
+      content: '';
+
+      @media (min-width: $sm) {
+        width: rem(70);
+        height: rem(70);
+      }
+    }
+  }
+
+  &__bg-inner {
+    height: rem(400);
+
+    @media (min-width: $sm) {
+      height: rem(500);
+    }
+
+    @media (min-width: $md) {
+      height: rem(600);
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      height: 30%;
+      background: linear-gradient(0deg, transparent, $primaryColor 100%);
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      height: 30%;
+      background: linear-gradient(180deg, transparent, $primaryColor 100%);
+      content: '';
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(40);
+    column-gap: rem(30);
+
+    // padding-inline: rem(15);
+
+    @media (min-width: $sm) {
+      margin-bottom: rem(60);
+    }
+  }
+
+  &__img-left,
+  &__img-right {
+    width: rem(105);
+    overflow: hidden;
+    border-radius: $radius;
+    box-shadow: $shadow;
+
+    @media (min-width: $sm) {
+      width: 50%;
+      max-width: rem(150);
+    }
+
+    @media (min-width: $md) {
+      min-width: rem(200);
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  // .why__img-left
+
+  &__img-left {
+    left: rem(15);
+  }
+
+  // .why__img-right
+
+  &__img-right {
+    right: rem(15);
+    transform: translateY(rem(20));
+  }
+
+  // .why__middle-column
+
+  &__middle {
+    margin-bottom: rem(40);
+    row-gap: rem(20);
+  }
+
+  // .why__middle-column-text
+
+  &__middle-text {
+    // .why__middle-column-text_big
+
+    &_big {
+      font-size: rem(26);
+      font-family: $secondaryFontFamily;
+      line-height: 1.2;
+    }
+  }
+
+  // .why__footer
+
+  &__footer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    max-width: rem(540);
+    column-gap: rem(20);
+    margin-inline: auto;
+    padding-inline: rem(15);
+
+    @media (min-width: $sm) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: rem(30);
+    }
+
+    @media (min-width: $md) {
+      column-gap: rem(60);
+    }
+  }
+
+  // .why__footer-img
+
+  &__footer-img {
+    overflow: hidden;
+    border-radius: $radius;
+    box-shadow: $shadow;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  // .why__footer-desc
+
+  &__footer-desc {
+  }
+
+  // .why__footer-desc-text
+
+  &__footer-desc-text {
+    margin-bottom: rem(40);
+    font-size: rem(18);
+    font-family: $secondaryFontFamily;
+    line-height: 1.2;
+
+    @media (min-width: $sm) {
+      font-size: rem(26);
+    }
+  }
+
+  // .why__footer-desc-btn
+
+  &__footer-desc-btn {
+    padding: rem(5) rem(9) rem(3);
+    font-size: rem(14);
+    text-align: center;
+
+    @media (min-width: $sm) {
+      padding: rem(11) rem(36) rem(9);
+      font-size: rem(16);
+    }
+
+    // @media (min-width: $sm) {
+    //   position: absolute;
+    //   top: 20%;
+    //   left: calc(50% + 15px);
+    // }
+
+    // @media (min-width: $md) {
+    //   left: calc(50% + 30px);
+    // }
+  }
+}

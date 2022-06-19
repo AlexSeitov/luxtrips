@@ -1,0 +1,78 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $secondaryFontFamily;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      .btn__icon_white {
+        fill: $black;
+
+        & ~ .btn__text {
+          color: $white;
+        }
+      }
+
+      .btn__icon_black {
+        fill: $white;
+
+        & ~ .btn__text {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &_transparent {
+    background-color: transparent;
+  }
+
+  &__icon {
+    width: 100%;
+    transition: all $transition;
+  }
+
+  &__icon_white {
+    fill: $white;
+  }
+
+  &__icon_black {
+    fill: $black;
+  }
+
+  &__text {
+    position: absolute;
+    padding-top: rem(6);
+    font-size: rem(20);
+    transition: color $transition;
+
+    @media (min-width: $md) {
+      font-size: rem(24);
+    }
+  }
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: rem(11) rem(36) rem(9);
+  font-size: rem(16);
+  font-family: $secondaryFontFamily;
+  text-transform: uppercase;
+  border: 1px solid $black;
+  border-radius: rem(50);
+  cursor: pointer;
+  transition: all $transition;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+  }
+}

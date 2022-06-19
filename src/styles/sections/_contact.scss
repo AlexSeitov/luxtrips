@@ -1,0 +1,66 @@
+.contact {
+  .container {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      height: calc(100% + 20px);
+      border: 1px solid $white;
+      border-radius: $radius;
+      content: '';
+      margin-inline: auto;
+      inset: -10px 30px 0 30px;
+    }
+  }
+
+  &__wrapper {
+    padding: rem(60) rem(15);
+    border: 1px solid $white;
+    border-radius: $radius;
+    backdrop-filter: blur(4px);
+
+    @media (min-width: $md) {
+      padding: rem(80) rem(15);
+    }
+  }
+
+  // .contact__title
+
+  &__title {
+    text-align: center;
+  }
+
+  // .contact__form
+
+  &__form {
+    // border: 1px solid $white;
+    border-radius: $radius;
+
+    input {
+      width: 100%;
+      margin-bottom: rem(20);
+      padding: rem(17) rem(15) rem(18);
+      background-color: transparent;
+      border: 1px solid $white;
+      border-radius: rem(50);
+
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+
+  &__form-inner {
+    max-width: rem(350);
+    margin-inline: auto;
+  }
+
+  &__btn {
+    width: 100%;
+    color: $white;
+
+    .btn__icon {
+    }
+  }
+}

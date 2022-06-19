@@ -1,0 +1,99 @@
+.subscribe {
+  padding-inline: rem(15);
+
+  &_home-page {
+    margin-top: -200px;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    padding: rem(50) rem(15);
+    overflow: hidden;
+    background-image: url('../images/subscribe/subscribe-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: $radius;
+
+    @media (min-width: $md) {
+      padding: rem(90) rem(15) rem(110);
+    }
+  }
+
+  &__content-wrapper {
+    position: relative;
+    z-index: 2;
+
+    @media (min-width: $md) {
+      max-width: rem(730);
+      margin-inline: auto;
+    }
+  }
+
+  // .subscribe__title
+
+  &__title {
+    max-width: rem(500);
+    color: $white;
+    text-align: center;
+
+    @media (min-width: $sm) {
+      text-align: left;
+    }
+  }
+
+  // .subscribe__form
+
+  &__form {
+    position: relative;
+
+    label {
+      display: block;
+      margin-bottom: rem(30);
+      color: $white;
+      text-align: center;
+
+      @media (min-width: $sm) {
+        text-align: left;
+      }
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: rem(30);
+      padding: rem(13) rem(30);
+      background-color: transparent;
+      border: 1px solid $white;
+      border-radius: 50px;
+      outline: none;
+      backdrop-filter: blur(20px);
+
+      &::placeholder {
+        color: $black;
+        text-align: center;
+        opacity: 0.7;
+
+        @media (min-width: $sm) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  &__form-btn {
+    width: 100%;
+    font-size: rem(18);
+    line-height: 1.2;
+    border: none;
+
+    @media (min-width: $sm) {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: initial;
+      font-size: rem(22);
+    }
+  }
+}

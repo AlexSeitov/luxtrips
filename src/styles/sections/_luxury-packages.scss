@@ -1,0 +1,70 @@
+.luxury-packages {
+  margin-bottom: rem(60);
+  background-image: url('../images/luxury-packages/luxury-packages-bg-sm.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $sm) {
+    margin-bottom: rem(100);
+    background-image: url('../images/luxury-packages/luxury-packages-bg-md.jpg');
+  }
+
+  @media (min-width: $xl) {
+    background-image: url('../images/luxury-packages/luxury-packages-bg.jpg');
+  }
+
+  &__wrapper {
+    position: relative;
+    padding-top: rem(100);
+    background: $bgGradientSmall;
+
+    @media (min-width: $sm) {
+      background: $bgGradient;
+    }
+  }
+
+  // .luxury-packages__title
+
+  &__title {
+    margin-bottom: rem(40);
+    font-size: rem(40);
+    text-align: center;
+
+    @media (min-width: $md) {
+      font-size: rem(60);
+    }
+  }
+
+  // .luxury-packages__row
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: rem(15);
+    margin-bottom: rem(40);
+
+    @media (min-width: $md) {
+      grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+    }
+
+    @media (min-width: rem(992)) {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+
+  // .luxury-packages__item
+
+  &__item {
+  }
+
+  // .luxury-packages__btn
+
+  &__btn {
+    font-size: rem(24);
+    margin-inline: auto;
+
+    span {
+      margin-top: 10px;
+    }
+  }
+}

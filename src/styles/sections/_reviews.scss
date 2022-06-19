@@ -1,0 +1,137 @@
+.reviews {
+  position: relative;
+  padding-bottom: rem(230);
+
+  @media (min-width: $md) {
+    padding-bottom: rem(400);
+  }
+
+  // .reviews__title
+
+  &__title {
+    text-align: center;
+  }
+
+  // .reviews__swiper
+
+  &__swiper {
+    padding: rem(10) 0;
+    overflow: hidden;
+  }
+
+  // .reviews__swiper-item
+
+  &__swiper-item.swiper-slide {
+    // position: relative;
+    padding: rem(50) rem(25);
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: $radius;
+
+    // backdrop-filter: blur(6px);
+  }
+
+  &__swiper-item-inner {
+    // filter: blur(6px);
+  }
+
+  // &__swiper-item-inner {
+  //   position: relative;
+
+  //   &::before {
+  //     position: absolute;
+  //     top: -10px;
+  //     right: 15px;
+  //     left: 15px;
+  //     height: calc(100% + 20px);
+  //     border: 1px solid $white;
+  //     border-radius: 8px;
+  //     content: '';
+  //   }
+  // }
+
+  // .reviews__swiper-item-img
+
+  &__swiper-item-img {
+    width: rem(100);
+    height: rem(100);
+    margin-bottom: rem(34);
+    overflow: hidden;
+    border-radius: 50%;
+
+    @media (min-width: $md) {
+      margin-bottom: rem(50);
+    }
+  }
+
+  // .reviews__swiper-item-text
+
+  &__swiper-item-text {
+    margin-bottom: rem(25);
+
+    @media (min-width: $md) {
+      margin-bottom: rem(70);
+    }
+  }
+
+  // .reviews__swiper-item-author
+
+  &__swiper-item-author {
+    text-align: center;
+
+    @media (min-width: $md) {
+      text-align: left;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  // .reviews__swiper-item-author-name
+
+  &__swiper-item-author-name {
+  }
+
+  // .reviews__swiper-item-author-town
+
+  &__swiper-item-author-town {
+  }
+
+  &__bg {
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+    width: 100%;
+    height: rem(800);
+    transform: translate(-50%, -300px);
+
+    &::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: block;
+      height: 20%;
+      background: linear-gradient(0deg, transparent, $primaryColor 100%);
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      height: 20%;
+      background: linear-gradient(180deg, transparent, $primaryColor 100%);
+      content: '';
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: 54% center;
+    }
+  }
+}

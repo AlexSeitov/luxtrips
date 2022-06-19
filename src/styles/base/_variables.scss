@@ -1,0 +1,65 @@
+// Fonts, text
+$fontFamily: 'Manrope', sans-serif;
+$secondaryFontFamily: 'Forum', cursive;
+$fontSize: rem(16);
+$fontWeight: 400;
+$lineHeight: 1.5;
+
+// Colors
+$primaryColor: #e2d3ce;
+$secondaryColor: #bbb7df;
+$black: #0c0b10;
+$white: #fcfcfc;
+$brown: #79655e;
+$gray: #dbdbdb;
+$bgGradient: linear-gradient(
+  180deg,
+  transparent,
+  #c9c8d8 14%,
+  #d4d8c6 60%,
+  #e2d3ce 100%
+);
+$bgGradientSmall: linear-gradient(
+  180deg,
+  transparent,
+  #c9c8d8 7%,
+  #d4d8c6 60%,
+  #e2d3ce 100%
+);
+
+// $btnColorHover: #6859f0;
+// $borderColor: #e0e0e0;
+// $gray: #66727f;
+// $placeholderColor: #999;
+
+// Others
+$radius: rem(10);
+$shadow: 0 0 rem(20) 0 rgba(0, 0, 0, 10%);
+$transition: 0.3s;
+
+// Sizes
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1110; // container size
+$containerPadding: 30;
+$containerWidth: $maxWidthContainer + $containerPadding; // Container with padding
+
+// Breakpoints
+$sm: rem(568);
+$md: rem(768);
+$lg: rem(1024);
+$xl: rem(1440);
+
+// Columns
+// $col-1: calc(100% / 12 * 1);
+// $col-2: calc(100% / 12 * 2);
+// $col-3: calc(100% / 12 * 3);
+// $col-4: calc(100% / 12 * 4);
+// $col-5: calc(100% / 12 * 5);
+// $col-6: 50%;
+// $col-7: calc(100% / 12 * 7);
+// $col-8: calc(100% / 12 * 8);
+// $col-9: calc(100% / 12 * 9);
+// $col-10: calc(100% / 12 * 10);
+// $col-11: calc(100% / 12 * 11);
+// $col-12: 100%;

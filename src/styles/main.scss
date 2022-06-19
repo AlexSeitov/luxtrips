@@ -1,0 +1,38 @@
+@use 'sass:math';
+
+// global
+@import 'vendor/normalize';
+@import 'base/functions';
+@import 'base/variables';
+@import 'mixins/font-face';
+@import 'base/fonts';
+@import 'base/global';
+@import 'UI/headings';
+@import 'UI/button';
+@import 'UI/burger';
+@import 'UI/nav';
+@import 'UI/slider';
+
+// @import 'UI/tabs';
+// @import 'UI/accordeon';
+
+// home page
+@import 'sections/place-card';
+@import 'sections/header';
+@import 'sections/main-block';
+@import 'sections/top-rated';
+@import 'sections/luxury';
+@import 'sections/book-with-us';
+@import 'sections/why';
+@import 'sections/customise-trip';
+@import 'sections/subscribe';
+@import 'sections/reviews';
+@import 'sections/contact';
+@import 'sections/footer';
+
+// luxury packages page
+@import 'sections/luxury-packages';
+@import 'sections/luxury-header';
+
+// luxury package page
+@import 'sections/lux-main-section'
