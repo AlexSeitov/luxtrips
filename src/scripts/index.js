@@ -5,6 +5,10 @@ import tabbis from './vendor/tabs.js';
 // import accordion from './modules/accordion.js';
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
+import LazyLoad from 'vanilla-lazyload';
+
+/* eslint-disable no-unused-vars */
+const lazyLoadInstance = new LazyLoad({});
 
 // Burger ======================================================================
 burger('.burger', '.nav', '.nav__link', 'body');
@@ -21,7 +25,7 @@ tabbis();
 // accordion('.accordion__head');
 
 // Swiper ======================================================================
-/* eslint-disable no-unused-vars */
+
 const swiper = new Swiper('.top-raited__swiper', {
   modules: [Navigation, Pagination],
   pagination: {
@@ -108,7 +112,6 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
 
 const translateImgs = document.querySelectorAll('.main-block__img');
 const mainTitle = document.querySelector('.main-block__title');
-// const searchForm = document.querySelector('.main-block__form');
 
 window.addEventListener('scroll', () => {
   let scroll = window.pageYOffset;
@@ -122,8 +125,4 @@ window.addEventListener('scroll', () => {
   mainTitle.style.transform = `translateY(${
     scroll * mainTitle.dataset.speed
   }px)`;
-
-  // searchForm.style.transform = `translate(-50%, ${
-  //   scroll * mainTitle.dataset.speed
-  // }px)`;
 });

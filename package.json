@@ -1,24 +1,26 @@
 {
-  "name": "advoproverka",
+  "name": "luxtrips",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "gulp toWoff2 && webpack serve --config ./webpack.dev.js",
-    "devBuild": "gulp",
+    "dev": "gulp startDev && webpack serve --config ./webpack.dev.js",
+    "start": "gulp",
     "build": "gulp build --build",
     "htmlhint": "npx htmlhint ./src/html/*",
-    "eslint": "eslint './**/*.js'",
-    "eslint:fix": "eslint --fix './**/*.js'",
+    "htmlValidation": "gulp htmlValidation",
     "stylelint": "stylelint './**/*.scss'",
     "stylelint:fix": "stylelint --fix './**/*.scss'",
     "lint": "prettier --check './**/*.(scss|js)'",
     "prettier:fix": "prettier --write './**/*.(scss|js)'",
-    "prepare": "husky install"
+    "eslint": "eslint './**/*.js'",
+    "eslint:fix": "eslint --fix './**/*.js'",
+    "prepare": "npx husky-init && husky install"
   },
   "browserslist": [
-    "last 3 versions",
+    "last 2 years",
+    "> 1%",
     "not dead",
     "not ie 11"
   ],
@@ -40,6 +42,7 @@
     "gulp-babel": "^8.0.0",
     "gulp-beautify": "^3.0.0",
     "gulp-clean-css": "^4.3.0",
+    "gulp-favicons": "^3.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-html-beautify": "^1.0.1",
@@ -53,11 +56,11 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-svgmin": "^4.1.0",
     "gulp-ttf2woff2": "^4.0.1",
-    "gulp-w3c-html-validator": "^5.1.1",
+    "gulp-w3c-html-validator": "^5.1.2",
     "gulp-webp": "^4.0.1",
     "html-webpack-plugin": "^5.5.0",
     "htmlhint": "^1.1.0",
-    "husky": "^7.0.0",
+    "husky": "^8.0.0",
     "imagemin-gifsicle": "^7.0.0",
     "mini-css-extract-plugin": "^2.5.3",
     "node-sass": "^7.0.1",
@@ -81,7 +84,12 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "a11y-dialog": "^7.4.0",
+    "glightbox": "^3.2.0",
+    "lightgallery": "^2.4.0",
+    "photoswipe": "^5.2.4",
     "smoothscroll-polyfill": "^0.4.4",
-    "swiper": "^7.4.1"
+    "swiper": "^7.4.1",
+    "vanilla-lazyload": "^17.8.2"
   }
 }

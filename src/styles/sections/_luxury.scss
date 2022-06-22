@@ -84,7 +84,7 @@
 
   // .luxury__grid
 
-  &__grid {
+  &__grid.swiper-wrapper {
     @media (min-width: $md) {
       display: grid;
       grid-template-rows: repeat(11, 60px);

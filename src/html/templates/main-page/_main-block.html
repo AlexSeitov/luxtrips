@@ -1,34 +1,107 @@
 <section class="main-block">
-  <div class="container">
+  <div class="main-block__title-wrapper">
     <h1 class="main-block__title h1" data-speed="0.5">extra ordinary places</h1>
   </div>
 
-  <!-- <div class="main-block__form" data-speed="0.4">
-    <form action="#" class="search-form">
-      <div class="search-form__group">
-        <label for="" class="search-form__label">Destination</label>
-        <input type="text" class="search-form__input" placeholder="Where are you going?">
-      </div>
-      <div class="search-form__group">
-        <label for="" class="search-form__label">Travel type</label>
-        <input type="text" class="search-form__input" placeholder="Adventure Travel">
-      </div>
-      <div class="search-form__group">
-        <label for="" class="search-form__label">When</label>
-        <input type="text" class="search-form__input" placeholder="14 Dec 2022">
-      </div>
-      <div class="search-form__group">
-        <label for="" class="search-form__label">Travellers</label>
-        <input type="text" class="search-form__input" placeholder="2 Persons">
-      </div>
-    </form>
-  </div> -->
-
   <div class="main-block__imgs">
-    <img class="main-block__img main-block__img-sky" src="images/main-block/sky.jpg" width="" height="" alt="" data-speed="0.3">
-    <img class="main-block__img main-block__img-1" src="images/main-block/1.png" width="" height="" alt="" data-speed="0.5">
-    <img class="main-block__img main-block__img-2" src="images/main-block/2.png" width="" height="" alt="" data-speed="0.4">
-    <img class="main-block__img main-block__img-3" src="images/main-block/3.png" alt="" data-speed="0.1">
-  </div>
+    <picture>
+      <source
+        srcset="images/main-block/main-block-sky-1440.jpg"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="images/main-block/main-block-sky-1024.jpg"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="images/main-block/main-block-sky-768.jpg"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/main-block/main-block-sky-568.jpg"
+        media="(min-width: 568px)"
+      />
+      <img
+        class="main-block__img main-block__img-sky"
+        src="images/main-block/main-block-sky-sm.jpg"
+        alt="nature"
+        data-speed="0.3"
+      />
+    </picture>
 
+    <picture>
+      <source
+        srcset="images/main-block/main-block-1-1440.png"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="images/main-block/main-block-1-1024.png"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="images/main-block/main-block-1-768.png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/main-block/main-block-1-568.png"
+        media="(min-width: 568px)"
+      />
+      <img
+        class="main-block__img main-block__img-1"
+        src="images/main-block/main-block-1-sm.png"
+        alt="nature"
+        data-speed="0.5"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="images/main-block/main-block-2-1440.png"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="images/main-block/main-block-2-1024.png"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="images/main-block/main-block-2-768.png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/main-block/main-block-2-568.png"
+        media="(min-width: 568px)"
+      />
+      <img
+        class="main-block__img main-block__img-2"
+        src="images/main-block/main-block-2-sm.png"
+        alt="nature"
+        data-speed="0.4"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="images/main-block/main-block-3-1440.png"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="images/main-block/main-block-3-1024.png"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="images/main-block/main-block-3-768.png"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="images/main-block/main-block-3-568.png"
+        media="(min-width: 568px)"
+      />
+      <img
+        class="main-block__img main-block__img-3"
+        src="images/main-block/main-block-3-sm.png"
+        alt="nature"
+        data-speed="0.1"
+      />
+    </picture>
+  </div>
 </section>

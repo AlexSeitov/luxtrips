@@ -6,20 +6,23 @@
 }
 
 .h1 {
-  margin-bottom: rem(20);
   color: $white;
   font-weight: 400;
-  font-size: rem(60);
-  line-height: lh(50, 60);
+  font-size: 12vw;
+  line-height: lh(38, 35);
+  text-align: center;
   text-transform: uppercase;
 
-  @media (min-width: $md) {
-    margin-bottom: rem(34);
-    font-size: rem(100);
+  @media (min-width: $lg) {
+    font-size: 10vw;
   }
 
-  @media (min-width: $lg) {
-    font-size: rem(120);
+  @media (min-width: $xl) {
+    font-size: 8vw;
+  }
+
+  @media (min-width: rem(1920)) {
+    font-size: rem(170);
   }
 }
 
@@ -43,7 +46,4 @@
   @media (min-width: $sm) {
     font-size: rem(36);
   }
-}
-
-.h4 {
 }

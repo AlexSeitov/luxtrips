@@ -4,7 +4,12 @@
   padding: 0;
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
+  height: 100%;
   overflow-x: hidden;
   color: $black;
   font-weight: $fontWeight;
@@ -12,6 +17,12 @@ body {
   font-family: $fontFamily;
   line-height: $lineHeight;
   background-color: $primaryColor;
+}
+
+.page-wrapper {
+  position: relative;
+  max-width: rem(1920);
+  margin-inline: auto;
 }
 
 a {
@@ -27,6 +38,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  font-size: 0;
+  line-height: 0px;
 }
 
 main {
