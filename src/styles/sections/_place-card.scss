@@ -4,11 +4,7 @@
   padding-top: 150%;
   overflow: hidden;
   border-radius: $radius;
-  -webkit-mask-image: radial-gradient(white, black);
-
-  // @media (min-width: $sm) {
-  //   padding-top: 150%;
-  // }
+  mask-image: radial-gradient(white, black);
 
   @media (hover: hover) {
     &:hover &__img {

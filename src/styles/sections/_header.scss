@@ -2,8 +2,6 @@
   position: absolute;
   z-index: 3;
   width: 100%;
-
-  // background-color: #ccc;
   padding-block: rem(10);
 
   @media (min-width: $sm) {
@@ -16,6 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: rem(15);
   }
 
   &__item {
@@ -48,11 +47,6 @@
     }
   }
 
-  // .header__nav
-
-  &__nav {
-  }
-
   // .header__btn
 
   &__btn {
@@ -79,22 +73,5 @@
 
   &__burger {
     order: 3;
-  }
-}
-
-.nav {
-  // .nav__list
-
-  &__list {
-  }
-
-  // .nav__item
-
-  &__item {
-  }
-
-  // .nav__link
-
-  &__link {
   }
 }

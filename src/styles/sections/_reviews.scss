@@ -22,7 +22,6 @@
   // .reviews__swiper-item
 
   &__swiper-item.swiper-slide {
-    // position: relative;
     padding: rem(50) rem(25);
     background-color: transparent;
     border: 1px solid $white;
@@ -30,25 +29,6 @@
 
     // backdrop-filter: blur(6px);
   }
-
-  &__swiper-item-inner {
-    // filter: blur(6px);
-  }
-
-  // &__swiper-item-inner {
-  //   position: relative;
-
-  //   &::before {
-  //     position: absolute;
-  //     top: -10px;
-  //     right: 15px;
-  //     left: 15px;
-  //     height: calc(100% + 20px);
-  //     border: 1px solid $white;
-  //     border-radius: 8px;
-  //     content: '';
-  //   }
-  // }
 
   // .reviews__swiper-item-img
 
@@ -86,16 +66,6 @@
     span {
       display: block;
     }
-  }
-
-  // .reviews__swiper-item-author-name
-
-  &__swiper-item-author-name {
-  }
-
-  // .reviews__swiper-item-author-town
-
-  &__swiper-item-author-town {
   }
 
   &__bg {

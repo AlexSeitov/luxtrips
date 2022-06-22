@@ -1,14 +1,8 @@
 .customize-trip {
   padding-bottom: rem(350);
-
-  // background-image: url('../images/customize-trip/customize-trip-bg.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-
-  @media (min-width: $md) {
-    // padding-bottom: rem(70);
-  }
 
   // .customize-trip__title
 
@@ -36,32 +30,13 @@
   &__num {
     display: flex;
     align-items: center;
-
-    // justify-content: center;
     padding-left: rem(15);
     font-size: rem(50);
     font-family: $secondaryFontFamily;
 
-    // text-align: center;
-
     @media (min-width: $md) {
       font-size: rem(70);
     }
-  }
-
-  // .customize-trip__info
-
-  &__info {
-  }
-
-  // .customize-trip__info-title
-
-  &__info-title {
-  }
-
-  // .customize-trip__info-text
-
-  &__info-text {
   }
 
   &__footer {

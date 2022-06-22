@@ -34,7 +34,6 @@
   // .contact__form
 
   &__form {
-    // border: 1px solid $white;
     border-radius: $radius;
 
     input {
@@ -59,8 +58,5 @@
   &__btn {
     width: 100%;
     color: $white;
-
-    .btn__icon {
-    }
   }
 }
