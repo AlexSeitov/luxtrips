@@ -2,8 +2,6 @@
   // padding-bottom: 40px;
   &__container {
     position: relative;
-
-    // padding-inline: rem(15);
   }
 
   &__heading,
@@ -24,16 +22,6 @@
 
   &__heading {
     margin-bottom: rem(20);
-  }
-
-  // .why__heading-title
-
-  &__heading-title {
-  }
-
-  // .why__heading-text
-
-  &__heading-text {
   }
 
   &__bg {
@@ -105,8 +93,6 @@
     justify-content: space-between;
     margin-bottom: rem(40);
     column-gap: rem(30);
-
-    // padding-inline: rem(15);
 
     @media (min-width: $sm) {
       margin-bottom: rem(60);
@@ -203,11 +189,6 @@
     }
   }
 
-  // .why__footer-desc
-
-  &__footer-desc {
-  }
-
   // .why__footer-desc-text
 
   &__footer-desc-text {
@@ -232,15 +213,5 @@
       padding: rem(11) rem(36) rem(9);
       font-size: rem(16);
     }
-
-    // @media (min-width: $sm) {
-    //   position: absolute;
-    //   top: 20%;
-    //   left: calc(50% + 15px);
-    // }
-
-    // @media (min-width: $md) {
-    //   left: calc(50% + 30px);
-    // }
   }
 }
