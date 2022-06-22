@@ -4,18 +4,6 @@
 
     <div class="reviews__swiper">
       <div class="swiper-wrapper">
-        <div class="reviews__swiper-item swiper-slide">
-          <div class="reviews__swiper-item-inner">
-            <div class="reviews__swiper-item-img">
-              <img src="images/reviews/reviews-1.jpg" width="120" height="120" alt="author">
-            </div>
-            <p class="reviews__swiper-item-text">“Well organized trip, All arranged well by Arooz. Special thanks to Aijaz Bhai for the service and support given to us, all explained well and take us to all places as per our wish. It was a wonderful experience .... Thank you team” lorem</p>
-            <div class="reviews__swiper-item-author">
-              <span class="reviews__swiper-item-author-name">Eduard Hand</span>
-              <span class="reviews__swiper-item-author-town">Müller-Egerer</span>
-            </div>
-          </div>
-        </div>
 
         <div class="reviews__swiper-item swiper-slide">
           <div class="reviews__swiper-item-img">
@@ -38,6 +26,17 @@
               <span class="reviews__swiper-item-author-town">Lekkerland234</span>
             </div>
         </div>
+
+        <div class="reviews__swiper-item swiper-slide">
+          <div class="reviews__swiper-item-img">
+              <img src="images/reviews/reviews-1.jpg" width="100" height="100" alt="author">
+            </div>
+            <p class="reviews__swiper-item-text">“We want to visit Manali from long time. Abhishek from ideal tour give us the best quote for Manali tour. He was very supportive and approachable at any time. He made our trip hassle-free. Thanks for your great help Abhishek...Ideal Tour..!!!”</p>
+            <div class="reviews__swiper-item-author">
+              <span class="reviews__swiper-item-author-name">Eduard Hand</span>
+              <span class="reviews__swiper-item-author-town">Müller-Egerer</span>
+            </div>
+        </div>
       </div>
   
       <div class="swiper-pagination"></div>
@@ -50,6 +49,12 @@
   </div>
 
   <div class="reviews__bg">
-    <img src="images/reviews/reviews-bg.jpg" width="1920" height="1252" alt="nature">
+    <picture>
+      <source srcset="images/reviews/reviews-bg.svg" data-srcset="images/reviews/reviews-bg-1440.jpg" media="(min-width: 1440px)">
+      <source srcset="images/reviews/reviews-bg.svg" data-srcset="images/reviews/reviews-bg-1024.jpg" media="(min-width: 1024px)">
+      <source srcset="images/reviews/reviews-bg.svg" data-srcset="images/reviews/reviews-bg-768.jpg" media="(min-width: 768px)">
+      <source srcset="images/reviews/reviews-bg.svg" data-srcset="images/reviews/reviews-bg-568.jpg" media="(min-width: 568px)">
+      <img src="images/reviews/reviews-bg.svg" class="lazy" data-src="images/reviews/reviews-bg-sm.jpg" width="600" height="800" alt="nature">
+    </picture>
   </div>
 </section>

@@ -7,8 +7,8 @@ export default {
   mode: 'development',
   entry: ['./src/scripts/index.js', './src/styles/main.scss'],
   output: {
-    filename: 'js/bundle.min.js',
-    path: path.resolve('dist')
+    path: path.resolve('dist'),
+    filename: 'js/[name].bundle.js'
   },
   devServer: {
     static: path.resolve('src'),
@@ -34,7 +34,7 @@ export default {
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
       {
-        test: /\.(jpg|jpeg|png|gif)$/i,
+        test: /\.(jpg|jpeg|gif)$/i,
         type: 'asset/resource'
       },
       {
@@ -49,12 +49,12 @@ export default {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/html/index.html'
+      template: 'src/html/index.html'
     }),
 
     new MiniCssExtractPlugin({
       linkType: 'text/css',
-      filename: 'css/style.min.css'
+      filename: 'css/[name].styles.css'
     })
   ]
 };
