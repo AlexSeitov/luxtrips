@@ -1,6 +1,6 @@
 import burger from './modules/burger.js';
-// import smoothscroll from 'smoothscroll-polyfill';
-// import scroll from './modules/smoothScroll.js';
+import smoothscroll from 'smoothscroll-polyfill';
+import scrollSmooth from './modules/scrollSmooth.js';
 import tabbis from './vendor/tabs.js';
 // import accordion from './modules/accordion.js';
 import Swiper, { Navigation, Pagination } from 'swiper';
@@ -14,8 +14,8 @@ const lazyLoadInstance = new LazyLoad({});
 burger('.burger', '.nav', '.nav__link', 'body');
 
 // SmoothScroll ================================================================
-// smoothscroll.polyfill();
-// scroll('.anchor-link');
+smoothscroll.polyfill();
+scrollSmooth('[data-link="anchor-link"]');
 
 // Tabs ========================================================================
 // https://github.com/jenstornell/tabbis.js
@@ -114,15 +114,15 @@ const translateImgs = document.querySelectorAll('.main-block__img');
 const mainTitle = document.querySelector('.main-block__title');
 
 window.addEventListener('scroll', () => {
-  let scroll = window.pageYOffset;
+  let scrollOffset = window.pageYOffset;
 
   translateImgs.forEach((item) => {
     const el = item;
     let speed = el.dataset.speed;
-    el.style.transform = `translateY(${scroll * speed}px)`;
+    el.style.transform = `translateY(${scrollOffset * speed}px)`;
   });
 
   mainTitle.style.transform = `translateY(${
-    scroll * mainTitle.dataset.speed
+    scrollOffset * mainTitle.dataset.speed
   }px)`;
 });

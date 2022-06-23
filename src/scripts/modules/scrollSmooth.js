@@ -1,4 +1,4 @@
-export default function smoothScroll(selector) {
+export default function scrollSmooth(selector) {
   const links = document.querySelectorAll(selector);
 
   function clickHandler(e) {
