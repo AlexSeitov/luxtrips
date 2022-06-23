@@ -48,11 +48,12 @@
       z-index: 10;
       display: block;
       height: 25%;
-      background: linear-gradient(
-        180deg,
-        rgba($primaryColor, 0%),
-        rgba($primaryColor, 100%)
-      );
+      background:
+        linear-gradient(
+          180deg,
+          rgba($primaryColor, 0%),
+          rgba($primaryColor, 100%)
+        );
       content: '';
     }
   }

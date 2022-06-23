@@ -1,7 +1,7 @@
 .place-card {
   position: relative;
   display: block;
-  padding-top: 150%;
+  padding-top: calc(162% + rem(3));
   overflow: hidden;
   border-radius: $radius;
   mask-image: radial-gradient(white, black);

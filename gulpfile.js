@@ -217,6 +217,7 @@ export const removeMap = () => {
 export const startDev = gulp.series(ttfToWoff, ttfRemove);
 
 export const build = gulp.series(
+  removeDist,
   gulp.parallel(
     html,
     styles,

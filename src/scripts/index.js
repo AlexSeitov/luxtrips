@@ -38,7 +38,7 @@ const swiper = new Swiper('.top-raited__swiper', {
     prevEl: '.swiper-button-prev'
   },
   slidesPerView: 1,
-  spaceBetween: 15,
+  spaceBetween: 30,
   breakpoints: {
     480: {
       slidesPerView: 2
