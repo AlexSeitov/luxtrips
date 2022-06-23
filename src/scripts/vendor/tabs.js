@@ -238,13 +238,13 @@ class tabbisClass {
   defaults() {
     return {
       keyboardNavigation: true,
-			memory: false,
-			paneGroup: '[data-panes]',
-			prefix: '',
-			tabActive: '[data-active]',
-			tabActiveFallback: 0,
-			tabGroup: '[data-tabs]',
-			trigger: 'click'
+      memory: false,
+      paneGroup: '[data-panes]',
+      prefix: '',
+      tabActive: '[data-active]',
+      tabActiveFallback: 0,
+      tabGroup: '[data-tabs]',
+      trigger: 'click'
     };
   }
 

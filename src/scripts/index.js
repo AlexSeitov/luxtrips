@@ -2,13 +2,18 @@ import burger from './modules/burger.js';
 import smoothscroll from 'smoothscroll-polyfill';
 import scrollSmooth from './modules/scrollSmooth.js';
 import tabbis from './vendor/tabs.js';
-// import accordion from './modules/accordion.js';
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import LazyLoad from 'vanilla-lazyload';
+import transParallax from './modules/transParallax.js';
 
 /* eslint-disable no-unused-vars */
+
+// Lazy loading ================================================================
 const lazyLoadInstance = new LazyLoad({});
+
+// Paralax =====================================================================
+transParallax();
 
 // Burger ======================================================================
 burger('.burger', '.nav', '.nav__link', 'body');
@@ -20,9 +25,6 @@ scrollSmooth('[data-link="anchor-link"]');
 // Tabs ========================================================================
 // https://github.com/jenstornell/tabbis.js
 tabbis();
-
-// Accordeon ===================================================================
-// accordion('.accordion__head');
 
 // Swiper ======================================================================
 
@@ -109,20 +111,3 @@ const reviewsSwiper = new Swiper('.reviews__swiper', {
 });
 
 /* eslint-enable no-unused-vars */
-
-const translateImgs = document.querySelectorAll('.main-block__img');
-const mainTitle = document.querySelector('.main-block__title');
-
-window.addEventListener('scroll', () => {
-  let scrollOffset = window.pageYOffset;
-
-  translateImgs.forEach((item) => {
-    const el = item;
-    let speed = el.dataset.speed;
-    el.style.transform = `translateY(${scrollOffset * speed}px)`;
-  });
-
-  mainTitle.style.transform = `translateY(${
-    scrollOffset * mainTitle.dataset.speed
-  }px)`;
-});
