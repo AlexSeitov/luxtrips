@@ -1,3 +1,6 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .footer {
   position: relative;
   margin-top: rem(80);
@@ -30,7 +33,7 @@
     margin-bottom: rem(40);
 
     img {
-      margin-inline: auto;
+      margin: 0 auto;
     }
   }
 
@@ -63,8 +66,8 @@
       }
 
       .btn {
-        padding-inline: rem(15);
-        margin-inline: auto;
+        margin: 0 auto;
+        padding: 0 rem(15);
       }
 
       .btn__text {

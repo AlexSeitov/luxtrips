@@ -10,7 +10,7 @@ import transParallax from './modules/transParallax.js';
 /* eslint-disable no-unused-vars */
 
 // Lazy loading ================================================================
-const lazyLoadInstance = new LazyLoad({});
+const lazyLoadInstance = new LazyLoad({ use_native: true });
 
 // Paralax =====================================================================
 transParallax();

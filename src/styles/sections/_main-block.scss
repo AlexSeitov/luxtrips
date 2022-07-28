@@ -1,3 +1,6 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .main-block {
   position: relative;
   width: 100%;
@@ -48,12 +51,11 @@
       z-index: 10;
       display: block;
       height: 25%;
-      background:
-        linear-gradient(
-          180deg,
-          rgba($primaryColor, 0%),
-          rgba($primaryColor, 100%)
-        );
+      background: linear-gradient(
+        180deg,
+        rgba($primaryColor, 0%),
+        rgba($primaryColor, 100%)
+      );
       content: '';
     }
   }
@@ -95,8 +97,8 @@
     z-index: 100;
     width: 100%;
     max-width: rem($containerWidth);
+    padding: 0 rem(15);
     transform: translateX(-50%);
-    padding-inline: rem(15);
   }
 }
 

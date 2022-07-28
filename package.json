@@ -5,8 +5,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "gulp startDev && webpack serve --config ./webpack.dev.js",
-    "start": "gulp",
+    "dev": "gulp dev && webpack serve --config ./webpack.dev.js",
+    "start": "gulp start",
     "build": "gulp build --build",
     "htmlhint": "npx htmlhint ./src/html/*",
     "htmlValidation": "gulp htmlValidation",

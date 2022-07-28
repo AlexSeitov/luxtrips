@@ -1,3 +1,6 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .reviews {
   position: relative;
   padding-bottom: rem(230);

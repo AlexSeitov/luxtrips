@@ -1,3 +1,6 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .btn {
   display: flex;
   align-items: center;
@@ -35,7 +38,6 @@
 
   &__icon {
     width: 100%;
-    transition: all $transition;
   }
 
   &__icon_white {
@@ -67,7 +69,8 @@
   border: 1px solid $black;
   border-radius: rem(50);
   cursor: pointer;
-  transition: all $transition;
+  transition-duration: $transition;
+  transition-duration: background-color, color;
 
   @media (hover: hover) {
     &:hover {

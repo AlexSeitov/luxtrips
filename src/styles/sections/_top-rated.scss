@@ -1,9 +1,12 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .top-raited {
   // .top-raited__title
 
   &__title {
     max-width: rem(350);
-    margin-inline: auto;
+    margin: 0 auto;
     text-align: center;
   }
 

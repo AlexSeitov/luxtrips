@@ -1,16 +1,21 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .contact {
   .container {
     position: relative;
 
     &::before {
       position: absolute;
+      top: rem(-10);
+      right: rem(30);
+      left: rem(30);
       z-index: -1;
       height: calc(100% + 20px);
+      margin: 0 auto;
       border: 1px solid $white;
       border-radius: $radius;
       content: '';
-      margin-inline: auto;
-      inset: -10px 30px 0 30px;
     }
   }
 
@@ -52,7 +57,7 @@
 
   &__form-inner {
     max-width: rem(350);
-    margin-inline: auto;
+    margin: 0 auto;
   }
 
   &__btn {

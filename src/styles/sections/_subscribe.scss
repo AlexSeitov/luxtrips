@@ -1,5 +1,8 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .subscribe {
-  padding-inline: rem(15);
+  padding: 0 rem(15);
 
   &_home-page {
     margin-top: -200px;
@@ -27,7 +30,7 @@
 
     @media (min-width: $md) {
       max-width: rem(730);
-      margin-inline: auto;
+      margin: 0 auto;
     }
   }
 

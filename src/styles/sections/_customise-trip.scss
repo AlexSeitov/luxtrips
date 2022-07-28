@@ -1,3 +1,6 @@
+@use '../base/functions' as *;
+@use '../base/variables' as *;
+
 .customize-trip {
   padding-bottom: rem(350);
   background-repeat: no-repeat;
@@ -8,8 +11,8 @@
 
   &__title {
     max-width: rem(540);
+    margin: 0 auto;
     text-align: center;
-    margin-inline: auto;
   }
 
   // .customize-trip__item
@@ -18,7 +21,7 @@
     display: grid;
     grid-template-columns: 20% 1fr;
     max-width: rem(540);
-    margin-inline: auto;
+    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: rem(60);
@@ -41,7 +44,7 @@
 
   &__footer {
     max-width: rem(540);
-    margin-inline: auto;
+    margin: 0 auto;
   }
 
   // .customize-trip__btn
